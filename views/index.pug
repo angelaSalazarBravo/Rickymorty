@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  div.container(style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;")
+    h1 Lista Completa
+    if personajes  
+      each personaje in personajes
+            h5.card-title= personaje.name 

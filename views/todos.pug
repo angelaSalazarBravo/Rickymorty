@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  div.container
+    h1 Lista Completa
+
+    if personajes  
+      each personaje in personajes
+            a(href='/id')= personaje.name 
+            hr.dropdown-divider

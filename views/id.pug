@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.container
+    h1 Vista del personaje
+    if personaje
+      div.card(style="width: 18rem;")
+        img.card-img-top(src=personaje.image, alt="Card image cap")
+        div.card-body
+          h5.card-title= personaje.name
+          p
+            strong gender: 
+            =    personaje.gender
